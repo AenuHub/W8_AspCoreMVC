@@ -5,6 +5,18 @@
 <html>
 <head>
     <title>Customer Orders</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+        }
+
+        th, td {
+            padding: 3px;
+            text-align: center;
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
 <h1>Customer Orders</h1>
@@ -23,10 +35,10 @@
     @foreach (var order in Model.Orders)
     {
         <tr>
-            <td style="text-align: center">@order.Id</td>
+            <td>@order.Id</td>
             <td>@order.ProductName</td>
-            <td>@order.Price</td>
-            <td style="text-align: center">@order.Quantity</td>
+            <td>@order.Price TL</td>
+            <td>@order.Quantity</td>
         </tr>
     }
 </table>
