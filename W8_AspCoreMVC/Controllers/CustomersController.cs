@@ -19,7 +19,7 @@ public class CustomersController : Controller
         var viewModel = new CustomerViewModel
         {
             Customer = customer,
-            WelcomeMessage = "Welcome to our customer portal"
+            WelcomeMessage = "Welcome to our customer portal!"
         };
         
         return View(viewModel);
